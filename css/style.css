@@ -1,0 +1,130 @@
+body {
+  background-color: hsl(222, 26%, 31%);
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+body p {
+  margin: 0;
+}
+body .container {
+  height: auto;
+  max-height: 800px;
+  width: 400px;
+  margin: 50px auto;
+}
+body .container .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: auto;
+}
+body .container .top-bar .title {
+  font-size: 24px;
+}
+body .container .top-bar .theme {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+body .container .top-bar .theme-title {
+  font-size: 12px;
+  align-self: flex-end;
+  padding-bottom: 5px;
+}
+body .container .top-bar .theme-switch {
+  position: relative;
+  width: 55px;
+}
+body .container .top-bar .theme-switch:before {
+  content: "  ";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 20px;
+  background: hsl(223, 31%, 20%);
+  border-radius: 30px;
+}
+body .container .top-bar .theme-switch__label {
+  display: inline-block;
+  font-size: 12px;
+  width: 15px;
+  height: 40px;
+  margin-top: -20px;
+  text-align: center;
+  cursor: pointer;
+  transition: color 200ms ease-out;
+}
+body .container .top-bar .theme-switch__indicator {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  background: hsl(6, 63%, 50%);
+  border-radius: 50%;
+  transition: transform 600ms cubic-bezier(0.02, 0.94, 0.09, 0.97), background 300ms cubic-bezier(0.17, 0.67, 0.14, 1.03);
+  transform: translate3d(1rem, 0, 0);
+}
+body .container .top-bar .theme-switch input#one:checked ~ .theme-switch__indicator {
+  background: hsl(6, 63%, 50%);
+  transform: translate3d(3px, 0, 0);
+}
+body .container .top-bar .theme-switch input#two:checked ~ .theme-switch__indicator {
+  background: MediumTurquoise;
+  transform: translate3d(25px, 0, 0);
+}
+body .container .top-bar .theme-switch input#three:checked ~ .theme-switch__indicator {
+  background: PaleVioletRed;
+  transform: translate3d(40px, 0, 0);
+}
+body .container .top-bar .theme-switch input[type=radio]:not(:checked), body .container .top-bar .theme-switch input[type=radio]:checked {
+  display: none;
+}
+body .container .screen {
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px 0;
+}
+body .container .screen p {
+  font-size: 32px;
+  text-align: right;
+}
+body .container .keypad {
+  background-color: hsl(223, 31%, 20%);
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px 20px;
+  font-size: 32px;
+}
+body .container .keypad-block {
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  place-self: center;
+  justify-self: stretch;
+  color: hsl(221, 14%, 31%);
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: 0 3px 1px hsl(28, 16%, 65%);
+}
+body .container .keypad-block-delete, body .container .keypad-block-reset {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 3px 1px hsl(224, 28%, 35%);
+}
+body .container .keypad-block-reset {
+  grid-area: 5/1/6/3;
+}
+body .container .keypad-block-equal {
+  grid-area: 5/3/6/5;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0 3px 1px hsl(6, 70%, 34%);
+}/*# sourceMappingURL=style.css.map */
