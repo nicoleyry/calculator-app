@@ -1,45 +1,121 @@
-@mixin keypad-box($theme, $block-color) {
+@mixin keypad-box($theme) {
 	@if #{$theme} == 'one' {
-		@if #{$block-color} == 'main' {
-			color: $theme-1-text-grayish;
-			background-color: $theme-1-keys-main-bg;
-			box-shadow: $box-shadow $theme-1-keys-main-shadow;
-		} @else if #{$block-color} == 'second' {
+		color: $theme-1-text-grayish;
+		background-color: $theme-1-keys-main-bg;
+		box-shadow: $box-shadow $theme-1-keys-main-shadow;
+
+		&:hover {
+			background-color: $theme-1-keys-main-shadow;
+		}
+		&:active {
+			background-color: $theme-1-keys-main-shadow;
+			transform: translateY(4px);
+		}
+		&-delete,
+		&-reset {
 			color: $theme-1-text-white;
 			background-color: $theme-1-keys-second-bg;
 			box-shadow: $box-shadow $theme-1-keys-second-shadow;
-		} @else if #{$block-color} == 'third' {
+
+			&:hover {
+				background-color: $theme-1-keys-second-shadow;
+			}
+			&:active {
+				background-color: $theme-1-keys-second-shadow;
+				transform: translateY(4px);
+			}
+		}
+		&-equal {
 			color: $theme-1-text-white;
 			background-color: $theme-1-keys-third-bg;
 			box-shadow: $box-shadow $theme-1-keys-third-shadow;
+
+			&:hover {
+				background-color: $theme-1-keys-third-shadow;
+			}
+			&:active {
+				background-color: $theme-1-keys-third-shadow;
+				transform: translateY(4px);
+			}
 		}
 	} @else if #{$theme} == 'two' {
-		@if #{$block-color} == 'main' {
-			color: $theme-2-text-grayish;
-			background-color: $theme-2-keys-main-bg;
-			box-shadow: $box-shadow $theme-2-keys-main-shadow;
-		} @else if #{$block-color} == 'second' {
+		color: $theme-2-text-grayish;
+		background-color: $theme-2-keys-main-bg;
+		box-shadow: $box-shadow $theme-2-keys-main-shadow;
+
+		&:hover {
+			background-color: $theme-2-keys-main-shadow;
+		}
+		&:active {
+			background-color: $theme-2-keys-main-shadow;
+			transform: translateY(4px);
+		}
+
+		&-delete,
+		&-reset {
 			color: $theme-1-text-white;
 			background-color: $theme-2-keys-second-bg;
 			box-shadow: $box-shadow $theme-2-keys-second-shadow;
-		} @else if #{$block-color} == 'third' {
+
+			&:hover {
+				background-color: $theme-2-keys-second-shadow;
+			}
+			&:active {
+				background-color: $theme-2-keys-second-shadow;
+				transform: translateY(4px);
+			}
+		}
+		&-equal {
 			color: $theme-1-text-white;
 			background-color: $theme-2-keys-third-bg;
 			box-shadow: $box-shadow $theme-2-keys-third-shadow;
+
+			&:hover {
+				background-color: $theme-2-keys-third-shadow;
+			}
+			&:active {
+				background-color: $theme-2-keys-third-shadow;
+				transform: translateY(4px);
+			}
 		}
 	} @else if #{$theme} == 'three' {
-		@if #{$block-color} == 'main' {
-			color: $theme-3-text-yellow;
-			background-color: $theme-3-keys-main-bg;
-			box-shadow: $box-shadow $theme-3-keys-main-shadow;
-		} @else if #{$block-color} == 'second' {
+		color: $theme-3-text-yellow;
+		background-color: $theme-3-keys-main-bg;
+		box-shadow: $box-shadow $theme-3-keys-main-shadow;
+
+		&:hover {
+			background-color: $theme-3-keys-main-shadow;
+		}
+		&:active {
+			background-color: $theme-3-keys-main-shadow;
+			transform: translateY(4px);
+		}
+		&-delete,
+		&-reset {
 			color: $theme-1-text-white;
 			background-color: $theme-3-keys-second-bg;
 			box-shadow: $box-shadow $theme-3-keys-second-shadow;
-		} @else if #{$block-color} == 'third' {
+
+			&:hover {
+				background-color: $theme-3-keys-second-shadow;
+			}
+			&:active {
+				background-color: $theme-3-keys-second-shadow;
+				transform: translateY(4px);
+			}
+		}
+		&-equal {
 			color: $theme-3-text-grayish;
 			background-color: $theme-3-keys-third-bg;
 			box-shadow: $box-shadow $theme-3-keys-third-shadow;
+
+			&:hover {
+				background-color: $theme-3-keys-third-shadow;
+			}
+			&:active {
+				background-color: $theme-3-keys-third-shadow;
+				transform: translateY(4px);
+			}
 		}
 	}
 }

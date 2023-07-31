@@ -123,7 +123,8 @@ body {
 				border-radius: $border-radius-block;
 				place-self: center;
 				justify-self: stretch;
-				
+				cursor: pointer;
+
 				&-reset {
 					grid-area: 5/1/6/3;
 				}
@@ -162,15 +163,7 @@ body {
 				background-color: $theme-1-bg-keypad;
 
 				&-block {
-					@include keypad-box('one', 'main');
-
-					&-delete,
-					&-reset {
-						@include keypad-box('one', 'second');
-					}
-					&-equal {
-						@include keypad-box('one', 'third');
-					}
+					@include keypad-box('one');
 				}
 			}
 		}
@@ -203,15 +196,7 @@ body {
 				background-color: $theme-2-bg-keypad;
 
 				&-block {
-					@include keypad-box('two', 'main');
-
-					&-delete,
-					&-reset {
-						@include keypad-box('two', 'second');
-					}
-					&-equal {
-						@include keypad-box('two', 'third');
-					}
+					@include keypad-box('two');
 				}
 			}
 		}
@@ -244,15 +229,7 @@ body {
 				background-color: $theme-3-bg-keypad;
 
 				&-block {
-					@include keypad-box('three', 'main');
-
-					&-delete,
-					&-reset {
-						@include keypad-box('three', 'second');
-					}
-					&-equal {
-						@include keypad-box('three', 'third');
-					}
+					@include keypad-box('three');
 				}
 			}
 		}

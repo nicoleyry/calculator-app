@@ -108,6 +108,7 @@ body .container .keypad-block {
   border-radius: 10px;
   place-self: center;
   justify-self: stretch;
+  cursor: pointer;
 }
 body .container .keypad-block-reset {
   grid-area: 5/1/6/3;
@@ -139,15 +140,36 @@ body.theme1 .container .keypad-block {
   background-color: hsl(30, 25%, 89%);
   box-shadow: 0 3px 1px hsl(28, 16%, 65%);
 }
+body.theme1 .container .keypad-block:hover {
+  background-color: hsl(28, 16%, 65%);
+}
+body.theme1 .container .keypad-block:active {
+  background-color: hsl(28, 16%, 65%);
+  transform: translateY(4px);
+}
 body.theme1 .container .keypad-block-delete, body.theme1 .container .keypad-block-reset {
   color: hsl(0, 0%, 100%);
   background-color: hsl(225, 21%, 49%);
   box-shadow: 0 3px 1px hsl(224, 28%, 35%);
 }
+body.theme1 .container .keypad-block-delete:hover, body.theme1 .container .keypad-block-reset:hover {
+  background-color: hsl(224, 28%, 35%);
+}
+body.theme1 .container .keypad-block-delete:active, body.theme1 .container .keypad-block-reset:active {
+  background-color: hsl(224, 28%, 35%);
+  transform: translateY(4px);
+}
 body.theme1 .container .keypad-block-equal {
   color: hsl(0, 0%, 100%);
   background-color: hsl(6, 63%, 50%);
   box-shadow: 0 3px 1px hsl(6, 70%, 34%);
+}
+body.theme1 .container .keypad-block-equal:hover {
+  background-color: hsl(6, 70%, 34%);
+}
+body.theme1 .container .keypad-block-equal:active {
+  background-color: hsl(6, 70%, 34%);
+  transform: translateY(4px);
 }
 body.theme2 {
   background-color: hsl(0, 0%, 90%);
@@ -173,15 +195,36 @@ body.theme2 .container .keypad-block {
   background-color: hsl(45, 7%, 89%);
   box-shadow: 0 3px 1px hsl(35, 11%, 61%);
 }
+body.theme2 .container .keypad-block:hover {
+  background-color: hsl(35, 11%, 61%);
+}
+body.theme2 .container .keypad-block:active {
+  background-color: hsl(35, 11%, 61%);
+  transform: translateY(4px);
+}
 body.theme2 .container .keypad-block-delete, body.theme2 .container .keypad-block-reset {
   color: hsl(0, 0%, 100%);
   background-color: hsl(185, 42%, 37%);
   box-shadow: 0 3px 1px hsl(185, 58%, 25%);
 }
+body.theme2 .container .keypad-block-delete:hover, body.theme2 .container .keypad-block-reset:hover {
+  background-color: hsl(185, 58%, 25%);
+}
+body.theme2 .container .keypad-block-delete:active, body.theme2 .container .keypad-block-reset:active {
+  background-color: hsl(185, 58%, 25%);
+  transform: translateY(4px);
+}
 body.theme2 .container .keypad-block-equal {
   color: hsl(0, 0%, 100%);
   background-color: hsl(25, 98%, 40%);
   box-shadow: 0 3px 1px hsl(25, 99%, 27%);
+}
+body.theme2 .container .keypad-block-equal:hover {
+  background-color: hsl(25, 99%, 27%);
+}
+body.theme2 .container .keypad-block-equal:active {
+  background-color: hsl(25, 99%, 27%);
+  transform: translateY(4px);
 }
 body.theme3 {
   background-color: hsl(268, 75%, 9%);
@@ -207,13 +250,34 @@ body.theme3 .container .keypad-block {
   background-color: hsl(268, 47%, 21%);
   box-shadow: 0 3px 1px hsl(290, 70%, 36%);
 }
+body.theme3 .container .keypad-block:hover {
+  background-color: hsl(290, 70%, 36%);
+}
+body.theme3 .container .keypad-block:active {
+  background-color: hsl(290, 70%, 36%);
+  transform: translateY(4px);
+}
 body.theme3 .container .keypad-block-delete, body.theme3 .container .keypad-block-reset {
   color: hsl(0, 0%, 100%);
   background-color: hsl(281, 89%, 26%);
   box-shadow: 0 3px 1px hsl(285, 91%, 52%);
 }
+body.theme3 .container .keypad-block-delete:hover, body.theme3 .container .keypad-block-reset:hover {
+  background-color: hsl(285, 91%, 52%);
+}
+body.theme3 .container .keypad-block-delete:active, body.theme3 .container .keypad-block-reset:active {
+  background-color: hsl(285, 91%, 52%);
+  transform: translateY(4px);
+}
 body.theme3 .container .keypad-block-equal {
   color: hsl(198, 20%, 13%);
   background-color: hsl(176, 100%, 44%);
   box-shadow: 0 3px 1px hsl(176, 100%, 44%);
+}
+body.theme3 .container .keypad-block-equal:hover {
+  background-color: hsl(176, 100%, 44%);
+}
+body.theme3 .container .keypad-block-equal:active {
+  background-color: hsl(176, 100%, 44%);
+  transform: translateY(4px);
 }/*# sourceMappingURL=style.css.map */
