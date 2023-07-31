@@ -1,15 +1,45 @@
-@mixin keypad-box($block-color) {
-	@if #{$block-color} == 'blue' {
-		color: $text-white;
-		background-color: $theme-1-keys-blue-bg;
-		box-shadow: $box-shadow $theme-1-keys-blue-shadow;
-	} @else if #{$block-color} == 'red' {
-		color: $text-white;
-		background-color: $theme-1-keys-red-bg;
-		box-shadow: $box-shadow $theme-1-keys-red-shadow;
-	} @else {
-		color: $theme-1-text;
-		background-color: $theme-1-keys-grayish-bg;
-		box-shadow: $box-shadow $theme-1-keys-grayish-shadow;
+@mixin keypad-box($theme, $block-color) {
+	@if #{$theme} == 'one' {
+		@if #{$block-color} == 'main' {
+			color: $theme-1-text-grayish;
+			background-color: $theme-1-keys-main-bg;
+			box-shadow: $box-shadow $theme-1-keys-main-shadow;
+		} @else if #{$block-color} == 'second' {
+			color: $theme-1-text-white;
+			background-color: $theme-1-keys-second-bg;
+			box-shadow: $box-shadow $theme-1-keys-second-shadow;
+		} @else if #{$block-color} == 'third' {
+			color: $theme-1-text-white;
+			background-color: $theme-1-keys-third-bg;
+			box-shadow: $box-shadow $theme-1-keys-third-shadow;
+		}
+	} @else if #{$theme} == 'two' {
+		@if #{$block-color} == 'main' {
+			color: $theme-2-text-grayish;
+			background-color: $theme-2-keys-main-bg;
+			box-shadow: $box-shadow $theme-2-keys-main-shadow;
+		} @else if #{$block-color} == 'second' {
+			color: $theme-1-text-white;
+			background-color: $theme-2-keys-second-bg;
+			box-shadow: $box-shadow $theme-2-keys-second-shadow;
+		} @else if #{$block-color} == 'third' {
+			color: $theme-1-text-white;
+			background-color: $theme-2-keys-third-bg;
+			box-shadow: $box-shadow $theme-2-keys-third-shadow;
+		}
+	} @else if #{$theme} == 'three' {
+		@if #{$block-color} == 'main' {
+			color: $theme-3-text-yellow;
+			background-color: $theme-3-keys-main-bg;
+			box-shadow: $box-shadow $theme-3-keys-main-shadow;
+		} @else if #{$block-color} == 'second' {
+			color: $theme-1-text-white;
+			background-color: $theme-3-keys-second-bg;
+			box-shadow: $box-shadow $theme-3-keys-second-shadow;
+		} @else if #{$block-color} == 'third' {
+			color: $theme-3-text-grayish;
+			background-color: $theme-3-keys-third-bg;
+			box-shadow: $box-shadow $theme-3-keys-third-shadow;
+		}
 	}
 }

@@ -1,8 +1,6 @@
 body {
-  background-color: hsl(222, 26%, 31%);
   font-weight: 700;
   font-family: "League Spartan", sans-serif;
-  color: hsl(0, 0%, 100%);
 }
 body p {
   margin: 0;
@@ -12,6 +10,13 @@ body .container {
   max-height: 800px;
   width: 400px;
   margin: 50px auto;
+}
+@media screen and (max-width: 376px) {
+  body .container {
+    width: auto;
+    max-width: 350px;
+    margin: 20px auto;
+  }
 }
 body .container .top-bar {
   display: flex;
@@ -44,7 +49,6 @@ body .container .top-bar .theme-switch:before {
   z-index: -1;
   width: 100%;
   height: 20px;
-  background: hsl(223, 31%, 20%);
   border-radius: 30px;
 }
 body .container .top-bar .theme-switch__label {
@@ -63,28 +67,23 @@ body .container .top-bar .theme-switch__indicator {
   position: absolute;
   top: 22px;
   left: 0;
-  background: hsl(6, 63%, 50%);
   border-radius: 50%;
   transition: transform 600ms cubic-bezier(0.02, 0.94, 0.09, 0.97), background 300ms cubic-bezier(0.17, 0.67, 0.14, 1.03);
   transform: translate3d(1rem, 0, 0);
 }
 body .container .top-bar .theme-switch input#one:checked ~ .theme-switch__indicator {
-  background: hsl(6, 63%, 50%);
   transform: translate3d(3px, 0, 0);
 }
 body .container .top-bar .theme-switch input#two:checked ~ .theme-switch__indicator {
-  background: MediumTurquoise;
   transform: translate3d(25px, 0, 0);
 }
 body .container .top-bar .theme-switch input#three:checked ~ .theme-switch__indicator {
-  background: PaleVioletRed;
   transform: translate3d(40px, 0, 0);
 }
 body .container .top-bar .theme-switch input[type=radio]:not(:checked), body .container .top-bar .theme-switch input[type=radio]:checked {
   display: none;
 }
 body .container .screen {
-  background-color: hsl(224, 36%, 15%);
   border-radius: 10px;
   padding: 30px;
   margin: 20px 0;
@@ -94,7 +93,6 @@ body .container .screen p {
   text-align: right;
 }
 body .container .keypad {
-  background-color: hsl(223, 31%, 20%);
   height: auto;
   padding: 20px;
   border-radius: 10px;
@@ -110,21 +108,112 @@ body .container .keypad-block {
   border-radius: 10px;
   place-self: center;
   justify-self: stretch;
-  color: hsl(221, 14%, 31%);
-  background-color: hsl(30, 25%, 89%);
-  box-shadow: 0 3px 1px hsl(28, 16%, 65%);
-}
-body .container .keypad-block-delete, body .container .keypad-block-reset {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(225, 21%, 49%);
-  box-shadow: 0 3px 1px hsl(224, 28%, 35%);
 }
 body .container .keypad-block-reset {
   grid-area: 5/1/6/3;
 }
 body .container .keypad-block-equal {
   grid-area: 5/3/6/5;
+}
+body.theme1 {
+  background-color: hsl(222, 26%, 31%);
+  color: hsl(0, 0%, 100%);
+}
+body.theme1 .container .top-bar .theme-switch:before {
+  background: hsl(223, 31%, 20%);
+}
+body.theme1 .container .top-bar .theme-switch__indicator {
+  background: hsl(6, 63%, 50%);
+}
+body.theme1 .container .top-bar .theme-switch input:checked ~ .theme-switch__indicator {
+  background: hsl(6, 63%, 50%);
+}
+body.theme1 .container .screen {
+  background-color: hsl(224, 36%, 15%);
+}
+body.theme1 .container .keypad {
+  background-color: hsl(223, 31%, 20%);
+}
+body.theme1 .container .keypad-block {
+  color: hsl(221, 14%, 31%);
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: 0 3px 1px hsl(28, 16%, 65%);
+}
+body.theme1 .container .keypad-block-delete, body.theme1 .container .keypad-block-reset {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 3px 1px hsl(224, 28%, 35%);
+}
+body.theme1 .container .keypad-block-equal {
   color: hsl(0, 0%, 100%);
   background-color: hsl(6, 63%, 50%);
   box-shadow: 0 3px 1px hsl(6, 70%, 34%);
+}
+body.theme2 {
+  background-color: hsl(0, 0%, 90%);
+  color: hsl(60, 10%, 19%);
+}
+body.theme2 .container .top-bar .theme-switch:before {
+  background: hsl(0, 5%, 81%);
+}
+body.theme2 .container .top-bar .theme-switch__indicator {
+  background: hsl(25, 98%, 40%);
+}
+body.theme2 .container .top-bar .theme-switch input:checked ~ .theme-switch__indicator {
+  background: hsl(25, 98%, 40%);
+}
+body.theme2 .container .screen {
+  background-color: hsl(0, 0%, 93%);
+}
+body.theme2 .container .keypad {
+  background-color: hsl(0, 5%, 81%);
+}
+body.theme2 .container .keypad-block {
+  color: hsl(60, 10%, 19%);
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: 0 3px 1px hsl(35, 11%, 61%);
+}
+body.theme2 .container .keypad-block-delete, body.theme2 .container .keypad-block-reset {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0 3px 1px hsl(185, 58%, 25%);
+}
+body.theme2 .container .keypad-block-equal {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0 3px 1px hsl(25, 99%, 27%);
+}
+body.theme3 {
+  background-color: hsl(268, 75%, 9%);
+  color: hsl(52, 100%, 62%);
+}
+body.theme3 .container .top-bar .theme-switch:before {
+  background: hsl(268, 71%, 12%);
+}
+body.theme3 .container .top-bar .theme-switch__indicator {
+  background: hsl(176, 100%, 44%);
+}
+body.theme3 .container .top-bar .theme-switch input:checked ~ .theme-switch__indicator {
+  background: hsl(176, 100%, 44%);
+}
+body.theme3 .container .screen {
+  background-color: hsl(268, 71%, 12%);
+}
+body.theme3 .container .keypad {
+  background-color: hsl(268, 71%, 12%);
+}
+body.theme3 .container .keypad-block {
+  color: hsl(52, 100%, 62%);
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0 3px 1px hsl(290, 70%, 36%);
+}
+body.theme3 .container .keypad-block-delete, body.theme3 .container .keypad-block-reset {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0 3px 1px hsl(285, 91%, 52%);
+}
+body.theme3 .container .keypad-block-equal {
+  color: hsl(198, 20%, 13%);
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: 0 3px 1px hsl(176, 100%, 44%);
 }/*# sourceMappingURL=style.css.map */
