@@ -135,7 +135,7 @@ document.addEventListener('keydown', function(e) {
 				keyId = 'equal';
 				break;
 			case 'Backspace':
-				keyId = 'delete';
+				keyId = 'backspace';
 				break;
 			case 'Delete':
 				keyId = 'reset';
