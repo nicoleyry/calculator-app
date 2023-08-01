@@ -20,19 +20,20 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 Users should be able to:
 
 - See the size of the elements adjust based on their device's screen size
-- Perform mathmatical operations like addition, subtraction, multiplication, and division
+- Perform mathematical operations like addition, subtraction, multiplication, and division
 - Adjust the color theme based on their preference
 
 ### Screenshot
-
-<img src="./images/screenshots/theme-1.png" alt="theme-1" width="200"/>
-<img src="./images/screenshots/theme-2.png" alt="theme-2" width="200"/>
-<img src="./images/screenshots/theme-3.png" alt="theme-3" width="200"/>
+<p float="left">
+	<img src="./images/screenshots/theme-1.png" alt="theme-1" width="200"/>
+	<img src="./images/screenshots/theme-2.png" alt="theme-2" width="200"/>
+	<img src="./images/screenshots/theme-3.png" alt="theme-3" width="200"/>
+</p>
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/calculator-app-using-css-grid-and-sass-15t9RMaY4D](https://www.frontendmentor.io/solutions/calculator-app-using-css-grid-and-sass-15t9RMaY4D)
+- Live Site URL: [https://nicoleyyr.github.io/calculator-app/](https://nicoleyyr.github.io/calculator-app/)
 
 ## My process
 
