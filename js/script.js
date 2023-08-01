@@ -107,6 +107,47 @@ keys.addEventListener('click', e => {
 	}
 });
 
+document.addEventListener('keydown', function(e) {
+	const numArr = [...Array(10).keys()];
+	const numArrStr = numArr.map(x => x.toString());
+	const operatorArr = ['+', '-', '*', '/', 'Backspace', 'Delete', '=', 'Enter'];
+	if(numArrStr.includes(e.key)) {
+		document.getElementById(`keypad-${e.key}`).click();
+	} else if(operatorArr.includes(e.key)) {
+		let keyId = '';
+		switch (e.key) {
+			case '+':
+				keyId = 'add';
+				break;
+			case '-':
+				keyId = 'subtract';
+				break;
+			case '*':
+				keyId = 'multiply';
+				break;
+			case '/':
+				keyId = 'divide';
+				break;
+			case 'Enter':
+				keyId = 'equal';
+				break;
+			case '=':
+				keyId = 'equal';
+				break;
+			case 'Backspace':
+				keyId = 'delete';
+				break;
+			case 'Delete':
+				keyId = 'reset';
+				break;
+			default:
+				keyId = '';
+		}
+
+		document.getElementById(`keypad-${keyId}`).click();
+	}
+});
+
 const calculate = (n1, operator, n2) => {
 	let result = '';
 
