@@ -1,15 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  height: 100vh;
+  padding: 20px;
   font-weight: 700;
   font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
 }
 body p {
   margin: 0;
 }
 body .container {
+  flex-grow: 2;
   height: auto;
   max-height: 800px;
   width: 400px;
-  margin: 50px auto;
 }
 @media screen and (max-width: 376px) {
   body .container {
@@ -119,6 +132,14 @@ body .container .keypad-block-reset {
 body .container .keypad-block-equal {
   grid-area: 5/3/6/5;
 }
+body .attribution {
+  bottom: 50px;
+  font-size: 12px;
+  text-align: center;
+}
+body .attribution a {
+  text-decoration: none;
+}
 body.theme1 {
   background-color: hsl(222, 26%, 31%);
   color: hsl(0, 0%, 100%);
@@ -173,6 +194,9 @@ body.theme1 .container .keypad-block-equal:hover {
 body.theme1 .container .keypad-block-equal:active {
   background-color: hsl(6, 70%, 34%);
   transform: translateY(4px);
+}
+body.theme1 .attribution a {
+  color: hsl(227, 43%, 68%);
 }
 body.theme2 {
   background-color: hsl(0, 0%, 90%);
@@ -229,6 +253,9 @@ body.theme2 .container .keypad-block-equal:active {
   background-color: hsl(25, 99%, 27%);
   transform: translateY(4px);
 }
+body.theme2 .attribution a {
+  color: hsl(0, 0%, 50%);
+}
 body.theme3 {
   background-color: hsl(268, 75%, 9%);
   color: hsl(52, 100%, 62%);
@@ -283,4 +310,7 @@ body.theme3 .container .keypad-block-equal:hover {
 body.theme3 .container .keypad-block-equal:active {
   background-color: hsl(176, 100%, 44%);
   transform: translateY(4px);
+}
+body.theme3 .attribution a {
+  color: hsl(267, 20%, 55%);
 }/*# sourceMappingURL=style.css.map */

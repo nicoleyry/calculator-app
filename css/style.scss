@@ -1,19 +1,32 @@
 @import "_mixin.scss";
 @import "_variable.scss";
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
+	height: 100vh;
+	padding: 20px;
 	font-weight: 700;
 	font-family: "League Spartan", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20px;
 
 	& p {
 		margin: 0;
 	}
 
 	& .container {
+		flex-grow: 2;
 		height: auto;
 		max-height: 800px;
 		width: 400px;
-		margin: 50px auto;
 
 		@media screen and (max-width: $mobile) {
 			width: auto;
@@ -139,6 +152,16 @@ body {
 
 
 	}
+	& .attribution {
+		bottom: 50px;
+		font-size: 12px;
+		text-align: center;
+
+		& a {
+			text-decoration: none;
+		}
+	}
+
 	&.theme1 {
 		background-color: $theme-1-bg-main;
 		color: $theme-1-text-white;
@@ -168,6 +191,11 @@ body {
 				&-block {
 					@include keypad-box('one');
 				}
+			}
+		}
+		& .attribution {
+			& a {
+				color: $theme-1-text-attribution;
 			}
 		}
 	}
@@ -203,6 +231,11 @@ body {
 				}
 			}
 		}
+		& .attribution {
+			& a {
+				color: $theme-2-text-attribution;
+			}
+		}
 	}
 
 	&.theme3 {
@@ -234,6 +267,11 @@ body {
 				&-block {
 					@include keypad-box('three');
 				}
+			}
+		}
+		& .attribution {
+			& a {
+				color: $theme-3-text-attribution;
 			}
 		}
 	}
