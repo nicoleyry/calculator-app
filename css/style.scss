@@ -115,9 +115,12 @@ body {
 			grid-template-columns: repeat(4, 1fr);
 			grid-template-rows: repeat(5, 1fr);
 			gap: 20px 20px;
-			font-size: 32px;
 
 			&-block {
+				font-size: 32px;
+				font-weight: 700;
+				font-family: "League Spartan", sans-serif;
+				border: 0;
 				padding: 10px;
 				text-align: center;
 				border-radius: $border-radius-block;
