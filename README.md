@@ -53,5 +53,5 @@ Users should be able to:
 ## Author
 
 - Website - [Nicole Yang](https://www.nicoleyry.com/)
-- Frontend Mentor - [@nicoleyyr](https://www.frontendmentor.io/profile/nicoleyyr)
+- Frontend Mentor - [@nicoleyry](https://www.frontendmentor.io/profile/nicoleyry)
 - Twitter - [@nicoleyry](https://twitter.com/nicoleyry)
